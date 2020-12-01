@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<page xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:framework:View/Layout/etc/page_configuration.xsd">
+    <body>
+        <referenceBlock name="head.additional">
+            <block name="header_footer_script"
+                   template="Training_HeaderFooterScripts::head_additional/header_footer_scripts.phtml"
+                   class="Magento\Framework\View\Element\Template" />
+        </referenceBlock>
+        <referenceBlock name="after.body.start">
+            <block name="after_body_start_header_footer_script"
+                   template="Training_HeaderFooterScripts::body_start/header_footer_script.phtml"
+                   class="Magento\Framework\View\Element\Template" />
+        </referenceBlock>
+        <referenceBlock name="before.body.end">
+            <block name="before_body_end_header_footer_script"
+                   template="Training_HeaderFooterScripts::body_end/header_footer_script.phtml"
+                   class="Magento\Framework\View\Element\Template" />
+        </referenceBlock>
+    </body>
+</page>

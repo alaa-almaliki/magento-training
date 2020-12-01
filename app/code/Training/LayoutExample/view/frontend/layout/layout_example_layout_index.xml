@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<page xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:framework:View/Layout/etc/page_configuration.xsd">
+    <head>
+        <title>Layout Example</title>
+    </head>
+    <body>
+        <referenceContainer name="content">
+            <block name="layout_example" class="Training\LayoutExample\Block\Layout\Index" template="Training_LayoutExample::content.phtml">
+                <block name="layout_note" class="Training\LayoutExample\Block\Layout\Note" template="Training_LayoutExample::note.phtml" />
+                <block name="cms_block_example" class="Magento\Cms\Block\Block">
+                    <arguments>
+                        <argument name="block_id" xsi:type="string">cms_block_example</argument>
+                    </arguments>
+                </block>
+            </block>
+        </referenceContainer>
+    </body>
+</page>
