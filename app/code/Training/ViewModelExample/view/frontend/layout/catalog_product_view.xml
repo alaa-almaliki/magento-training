@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<page xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:framework:View/Layout/etc/page_configuration.xsd">
+    <body>
+        <referenceContainer name="product.info.main">
+            <block name="delivery_message"
+                   class="Magento\Framework\View\Element\Template"
+                   template="Training_ViewModelExample::delivery_message.phtml"
+                   before="product.info.price">
+                <arguments>
+                    <argument name="view_model" xsi:type="object">Training\ViewModelExample\ViewModel\DeliveryMessage</argument>
+                </arguments>
+            </block>
+        </referenceContainer>
+    </body>
+</page>
