@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:framework:ObjectManager/etc/config.xsd">
+    <preference for="Training\DependencyExample\Model\InjectableInterface"
+                type="Training\DependencyExample\Model\Injectable"/>
+    <preference for="Training\DependencyExample\Model\NonInjectableInterface"
+                type="Training\DependencyExample\Model\NonInjectable"/>
+    <type name="Training\DependencyExample\Model\Main">
+        <arguments>
+            <argument name="util" xsi:type="object">Training\DependencyExample\Model\Util</argument>
+            <argument name="heavyOperation" xsi:type="object">Training\DependencyExample\Model\HeavyOperation\Proxy</argument>
+            <argument name="defaultName" xsi:type="object">UpperCaseName</argument>
+            <argument name="optional" xsi:type="object">Training\DependencyExample\Model\Optional</argument>
+            <argument name="data" xsi:type="array">
+                <item name="id" xsi:type="string">Class Main</item>
+            </argument>
+        </arguments>
+    </type>
+    <virtualType name="UpperCaseName" type="Training\DependencyExample\Model\VirtualType\DefaultName">
+        <arguments>
+            <argument name="name" xsi:type="object">Training\DependencyExample\Model\VirtualType\UpperCaseName</argument>
+        </arguments>
+    </virtualType>
+</config>

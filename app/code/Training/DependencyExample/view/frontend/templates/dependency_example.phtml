@@ -1,0 +1,36 @@
+<?php /** @var \Training\DependencyExample\Block\Example $block */?>
+<div>
+    <h2>Dependency Examples</h2>
+</div>
+
+<p>
+    Class Main id is: <?= $block->getMain()->getId()?>
+</p>
+
+<p>
+    Class Injectable id is: <?= $block->getMain()->getInjectable()->getId()?>
+</p>
+
+<p>
+    Class NonInjectable id is: <?= $block->getMain()->getNonInjectable()->getId()?>
+</p>
+
+<p>
+    Class Util name is: <?= $block->getMain()->getUtil()->getName()?>
+</p>
+
+<p>
+    Class HeavyOperation name is: <?= $block->getMain()->getHeavyOperation()->getName()?>
+</p>
+
+<p>
+    Class DefaultName name is: <?= $block->getMain()->getDefaultName()->getName()?>
+</p>
+
+<p>
+    Class Optional name is: <?= $block->getMain()->getOptional()->getName()?>
+</p>
+
+<p>
+    Class Method Injection name is: <?= $block->getMain()->getMethodInjectionName()?>
+</p>
