@@ -1,0 +1,21 @@
+<?php /** @var \Magento\Framework\View\Element\Template $block */ ?>
+
+<h2>Examples:</h2>
+<p>
+    <?= $block->getViewModel()->getSupply()->getSupplier()->getCode() ;?>
+</p>
+
+
+<p>
+    <?= $block->getViewModel()->getDemand()->getSupplier()->getCode() ;?>
+</p>
+
+
+<p>
+    <?= $block->getViewModel()->getSupply()->getItem()->getCode() ;?>
+</p>
+
+
+<p>
+    <?= $block->getViewModel()->getDemand()->getItem()->getCode() ;?>
+</p>
