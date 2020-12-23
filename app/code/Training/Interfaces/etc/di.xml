@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:framework:ObjectManager/etc/config.xsd">
+    <preference for="Training\Interfaces\Api\SupplierRepositoryInterface" type="Training\Interfaces\Model\SupplierRepository"/>
+    <preference for="Training\Interfaces\Api\Data\SupplierInterface" type="Training\Interfaces\Model\Supplier"/>
+    <type name="Training\Interfaces\Api\SupplierRepositoryInterface">
+        <arguments>
+            <argument name="codeValidation" xsi:type="object">Training\Interfaces\Model\CodeLengthValidation</argument>
+        </arguments>
+    </type>
+</config>
