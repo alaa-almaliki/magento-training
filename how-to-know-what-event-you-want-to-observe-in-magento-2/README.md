@@ -1,3 +1,3 @@
-# How to mute observers in Magento 2
+# How to know what event you want to observe in Magento 2
 
-[Youtube Tutorial](https://youtu.be/_pA3rgh-91M)
+[Youtube Tutorial](https://youtu.be/sYYw1AXRBok)
