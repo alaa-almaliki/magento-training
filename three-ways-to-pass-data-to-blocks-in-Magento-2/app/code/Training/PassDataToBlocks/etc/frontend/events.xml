@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:framework:Event/etc/events.xsd">
+    <event name="core_layout_block_create_after">
+        <observer name="add_tutorial_link" instance="Training\PassDataToBlocks\Observer\AddTutorialLink" />
+    </event>
+</config>

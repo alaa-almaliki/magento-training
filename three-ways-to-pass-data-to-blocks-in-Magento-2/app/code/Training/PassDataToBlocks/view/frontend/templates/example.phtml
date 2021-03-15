@@ -1,0 +1,12 @@
+<?php /** @var \Training\PassDataToBlocks\Block\Example $block */?>
+<?php /** @var \Magento\Framework\Escaper $escaper */?>
+<div>
+    Data for block example
+</div>
+
+<ul>
+    <li><?= $block->getTopic()?></li>
+    <li><?= $block->getDescription()?></li>
+    <li><a href="<?= $block->getTutorialLink()?>"><?= $escaper->escapeHtml(__('Magento 2 Training'))?></a></li>
+    <li><?= $block->getDummyName()?></li>
+</ul>
