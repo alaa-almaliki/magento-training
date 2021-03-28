@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+        xsi:noNamespaceSchemaLocation="urn:magento:module:Magento_Config:etc/system_file.xsd">
+    <system>
+        <tab id="training" sortOrder="10">
+            <label>Training</label>
+        </tab>
+        <section id="training_example" sortOrder="1" showInStore="1" showInDefault="1" showInWebsite="1" type="text">
+            <tab>training</tab>
+            <resource>Training_SystemConfigExample::config</resource>
+            <label>Training System Example</label>
+            <group id="system" type="text" showInWebsite="1" showInDefault="1" showInStore="1" sortOrder="1">
+                <label>System Configuration</label>
+                <field id="config1_enabled" showInStore="1" showInWebsite="1" showInDefault="1" type="select">
+                    <label>Enable Config1</label>
+                    <source_model>Magento\Config\Model\Config\Source\Yesno</source_model>
+                </field>
+                <field id="config1" sortOrder="1" showInStore="1" showInDefault="1" showInWebsite="1" type="text">
+                    <label>Config1</label>
+                    <comment>This is a config 1</comment>
+                    <depends>
+                        <field id="config1_enabled">1</field>
+                    </depends>
+                </field>
+                <field id="config2" sortOrder="1" showInDefault="1" type="text">
+                    <label>Config2</label>
+                </field>
+                <field id="config3" sortOrder="1" showInDefault="1" showInWebsite="1" type="text">
+                    <label>Config3</label>
+                </field>
+                <field id="config4" sortOrder="1" showInWebsite="1" type="text">
+                    <label>Config4</label>
+                </field>
+                <field id="config5" sortOrder="1" showInStore="1" type="text">
+                    <label>Config5</label>
+                </field>
+            </group>
+            <group id="nested_groups" type="text" showInDefault="1" showInWebsite="1" showInStore="1" sortOrder="2">
+                <label>Nested Groups</label>
+                <group id="nested1" type="text" showInDefault="1" showInWebsite="1" showInStore="1">
+                    <label>Nested Group 1</label>
+                    <field id="nested_config1" type="text" showInStore="1" showInWebsite="1" showInDefault="1"
+                           sortOrder="1">
+                        <label>Nested Config 1</label>
+                    </field>
+                </group>
+                <group id="nested2" type="text" showInDefault="1" showInWebsite="1" showInStore="1">
+                    <label>Nested Group 2</label>
+                    <field id="nested_config2" type="text" showInStore="1" showInWebsite="1" showInDefault="1"
+                           sortOrder="1">
+                        <label>Nested Config 2</label>
+                    </field>
+                </group>
+            </group>
+        </section>
+    </system>
+</config>
