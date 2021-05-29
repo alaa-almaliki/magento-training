@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:module:Magento_Config:etc/system_file.xsd">
+    <system>
+        <tab id="training" sortOrder="900">
+            <label>Training</label>
+        </tab>
+        <section id="training" sortOrder="1" showInDefault="1" showInStore="1" showInWebsite="1" type="text">
+            <tab>training</tab>
+            <label>Training</label>
+            <resource>Training_IfConfigExample::config</resource>
+            <group id="ifcongig" type="text" showInWebsite="1" showInStore="1" showInDefault="1" sortOrder="1">
+                <label>If Config</label>
+                <field id="enable" sortOrder="1" showInDefault="1" showInStore="1" showInWebsite="1" type="select">
+                    <label>Enable</label>
+                    <source_model>Magento\Config\Model\Config\Source\Yesno</source_model>
+                </field>
+            </group>
+        </section>
+    </system>
+</config>

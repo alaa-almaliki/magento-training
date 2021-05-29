@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:module:Magento_Config:etc/system_file.xsd">
+    <system>
+        <tab id="training" sortOrder="1000">
+            <label>Training</label>
+        </tab>
+        <section id="training" sortOrder="1" type="text" showInDefault="1">
+            <tab>training</tab>
+            <label>Cron Config Path</label>
+            <resource>Training_CronConfigPath::config</resource>
+            <group id="cron" showInDefault="1" type="text" sortOrder="1">
+                <label>Cron Settings</label>
+                <field id="cron_expr" sortOrder="1" type="text" showInDefault="1">
+                    <label>Cron Expression</label>
+                </field>
+            </group>
+        </section>
+    </system>
+</config>
